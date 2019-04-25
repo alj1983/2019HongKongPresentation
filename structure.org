@@ -1,0 +1,25 @@
+20 slides for 20 minutes talk
+
+Cover slide
+
+* introduction
+  Slide 1: Colorful plumage, pretentious flowers
+  - Ecological importance of seagrass
+  - Clonal and sexual reproduction in seagrass results in low genetic variation
+  - Giant clones
+  - Epigenetic layer of inheritable variation
+  - The ecological importance of epigenetic variation
+  - Objectives of this study
+* methods/results/discussion
+ - Sampling location and pattern
+  - Genetic uniformity
+  - MethylRAD 
+  - Epigenetic variation between shoots
+  - Epigenetic variation between shoots not related to distance from shore
+
+  - Heat stress experiment
+  - photosynthetic performance
+  - heat stress response of performance
+  - Epigenetic heat-stress response
+  - Correlation between performance and epigenetics
+* conclusion

@@ -1,10 +1,12 @@
 <!doctype html>
 
+
 <!-- https://potentpages.com/web-design/reveal-js/tutorials -->
 <!-- https://stevegrunwell.com/blog/building-presentations-<!-- revea<\!-- l-js-2/ -\\-> -\-> -->
 <!-- https://www.chenhuijing.com/blog/revealjs-and-github-pages/ -->
 <!-- http://kripken.github.io/talks/ -->
 <!-- nice example http://slides.com/gsklee/functional-programming-in-5-minutes#/29 -->
+<!-- For pdf export: decktape --chrome-arg=--no-sandbox --size='2048x1536' index.html test.pdf -->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -14,7 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/own.css">
-		<link rel="stylesheet" href="css/theme/league.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -29,30 +31,368 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
+	  <div class="reveal">
+	    <header style="position: absolute;bottom: 10px; left:10px; z-index:500; font-size:20px; color: #ffffff; background-color: rgba(0,0,0,0.3)"></header>
+
+	    <!-- absolute positioning of text on the page from https://www.raymondcamden.com/2014/04/01/Adding-an-Absolutely-Positioned-Header-to-Revealjs -->
 		  <div class="slides">
 
 
-				<section data-background="figures/home-bg1.jpg" data-state="dimbg">
-				  <h2>Functional Role of Epigenetic Variation in Seagrass Under Heat Stress</h2>
-				  <h3>GRC Marine Molecular Ecology</h3>
-				  <h4>Hong Kong</h4>
-				  <p>
-				    <small>Alexander Jueterbock, Nord University, Norway</small>
-				  </p>
-				</section>
-				
-				<section>What is the methylome?
-				  <img src="figures/295822.png" style="">
+		    <section data-background="figures/home-bg1.jpg" data-state="title">
+		      <!-- data-state="dimbg"> -->
+		      <style>.title header:after { content:
+			"Photo: Galice Hoarau"; }</style>
+		      <div class="titlebg">
+			<h2 class="white">Functional role of <br>epigenetic variation<br> in seagrass <br>under heat stress</h2>
+			<h4 class="white">GRC Marine Molecular Ecology</h4>
+			<h4 class="white">Hong Kong</h4>
+			<p class="white">
+			  <small>Alexander Jueterbock<br>Researcher at Nord University<br>Norway</small>
+			</p>
+		      </div>
+		    </section>
 
-				</section>
-				
-				<section>Slide 2</section>
-				<section>Slide 3</section>
-				<section>
-				  <section>Vertical Slide 1</section>
-				  <section>Vertical Slide 2</section>
-				</section>
+		    <section data-transition="zoom">
+		      
+		      <section data-background="figures/7339653286_a7006c6732_h.jpg" data-state="header1">
+			<style>.header1 header:after { content: "Photo: Kristine Deppe https://www.flickr.com/photos/33414049@N08/7339653286/"; }</style>
+			<aside class="notes">
+			  Pretentious flowers, colorful plumage, and
+			  attractive ornaments—all are created with the
+			  ultimate goal to attract the opposite sex and
+			  contribute half of one’s own genes to the
+			  next generation. Recombination of genetic
+			  material during sexual reproduction allows
+			  the next generation to cope with changing
+			  selection pressures. Thus, genetic variation
+			 is considered the key to survival of
+			  populations in the long term3, and is
+			  recognized as a main target for the
+			  conservation of biological diversity. In
+			  contrast, lack of genetic variation is
+			  regarded as an evolutionary dead-end . For
+			  example, conservation management follows the
+			  rough guideline that more than 1 000 genetically
+			  different individuals in a population should
+			  mate randomly to avoid inbreeding depression,
+			  and retain evolutionary potential.
+		       </aside>		      
+		      </section>
+		      
+		      <section data-background="figures/flowermeadow.jpg" data-state="header2">
+			<style>.header2 header:after { content: "Photo: https://apuncto.de/wp-content/uploads/2018/04/Blumenwiesen-im-Garten-Titelbild.jpg"; }</style>
+		      </section>
+		      
+		      <section>
+		       	<h3>Asexual reproduction in flowering plants</h3>
+			<img width="80%" height="auto" src="figures/StrawberryRunners.png">
+			<p class="authors">coursehero.com</p>
+			<aside class="notes">
+			  Yet, many species are sexually abstinent
+			  and produce clonal offspring that are
+			  genetically identical. While more rare in
+			  animals, roughly 40% of all plants can
+			  reproduce asexually, mostly through clonal
+			  growth where parental genotypes (genets)
+			  grow vegetative modules (ramets) that often
+			  remain connected via underground stolons or
+			  rhizomes.
+			</aside>	 
+		      </section>
+		      
+		      
+		      <section>
+			<h3>Asexual reproduction in seagrass</h3>
+			<img width="65%" height="auto" src="figures/EelgrassRhizome.png">
+			<p class="authors">Fonseca & Uhrin (2009), <i>Marine Fisheries Review</i></p>
+			<aside class="notes">
+			  While clones benefit from resource sharing (clonal integration) 14 , niche specialization, and rapid vegetative
+			  growth 14 , they are predicted to survive only for short periods and in stable environments 6 due to the
+			  accumulation of deleterious mutations, slow rates of genetic evolution, and the lack of DNA repair
+			  mechanisms afforded by meiosis (Muller’s ratchet, mutational meltdown) 7–9 .
+			</aside>	 
+		      </section>
+		      
+		      
+		      
+		     
+		      <section data-background="figures/PicturesFromChristofferBostroem/Angso.jpg" data-state="chris1">
+			<style>.chris1 header:after { content: "Photo: Christoffer Boström"; }</style>
+			<aside class="notes">
+			  However, seagrasses form large clonal meadows
+			  that can persist for millenia. For example
+			  clonal meadows of the mediterranean seagrass
+			  Posidonia oceanica was estimated more than
+			 10,000 years old.
+			</aside>
+		      </section>
+		      
+		      <section data-background="figures/PicturesFromChristofferBostroem/Sandskar.jpg" data-state="chris2">
+			<style>.chris2 header:after { content: "Photo: Christoffer Boström"; }</style>
+			<aside class="notes">
+			  Here we see a clonal meadow of the seagqrass
+			  Zostera marina in the Baltic sea. the evolutionary success of
+			  massive-ancient seagrass clones challenges the direct relationship
+			  between genetic diversity, adaptation potential, and persistence.
+			</aside>
+		      </section>
+		      
+		      <section>
+			<h3>Epigenetic variation</h3>
+			<img width="63%" height="auto" src="figures/EpigeneticsBookFig.png">
+			<p class="authors">Allis et al. (2015), <i>Epigenetics</i></p>
+		       <aside class="notes">
+			 Over the past ten years, advances in the young research field of ecological epigenetics increasingly recognize
+			 epigenetic variation as an additional level of evolutionary relevant variation 18,19,49,20,42–48 . Epigenetic variation
+			 can be independent from genetic variation 19,47,50,51 , and was suggested to contribute to the spread of clonal
+			 organisms across heterogeneous environments 22
+		       </aside>			
+		      </section>
+		      
+		      <section>
+			<h3>Compensation for absence of genetic variation</h3>
+			<small>Methylation variation increased productivity and resistance</small>
+			<div id="left60">
+			  <img width="80%" src="figures/Latzel2013Fig2.png">
+			</div>
+			<div id="right40">
+			  <img width="50%" src="figures/Latzel2013Fig1b.png">
+			</div>
+			<p class="halfsize leftalign"><i>Arabidopsis thaliana</i></p>
+			<p class="authors leftalign">Latzel et al. (2013), <i>Nature Communications</i></p>
+			<aside class="notes">
+			</aside>
+		      </section>
+		      
+		      
+		      
+		      <section>
+			<h3>What is the methylome?</h3>
+			<img width="70%" height="auto" src="figures/zakhari01.png">
+			<p class="authors">Zakhari (2013), <i>Alcohol research: current reviews</i></p>
+			<aside class="notes">
+			</aside>			
+		      </section>
+		      
+		      
+		      
+		      <section>
+			<h3>DNA methylation represses gene expression</h3>
+			<img width="70%" src="figures/2958222.png">
+			<p class="authors">source: http://cnx.org/contents/QcTHfqRM@1/Basic-Principles-of-Genetics</p>
+			
+		      </section>
+		      
+		      
+		      <section>
+			<h3>DNA methylation heritability</h3>
+			<img width="100%" src="figures/Replication.png">
+			<p class="authors">source: http://www.atdbio.com/content/56/Epigenetics</p>
+			<aside class="notes">
+			  Methylation patterns in the genome are reset
+			  during meiosis and embryogenesis and
+			  maintained during mitosis.
+			</aside>
+			<ul class="smaller">
+			  <li>Epimutation rate ca. 64,000 x genetic mutation rate</li>
+			  <li>Response to environment</li>
+			</ul>
+		      </section>
+
+		      
+		      <section>
+			<h3>Resetting versus memory in DNA methylation</h3>
+			<img width="32%" src="figures/CrispFig1.png">
+			<p class="authors">Crisp et al. (2016), <i>Science Advances</i></p>
+			<aside class="notes">
+			</aside>
+		      </section>
+		    </section>
+
+		    <section data-transition="zoom">
+		      <section>
+			<h3>Objectives</h3>
+			<ul>
+			  <li class="fragment highlight-blue">Do seagrass clones vary in DNA methylation?</li>
+			  <li>Can the methylome predict heat stress resistance?</li>
+			</ul>
+			<aside class="notes">
+			</aside>
+		      </section>
+		      
+		      <section>
+			<h3>Sampling in the Baltic Sea</h3>
+			<div>
+			  <small>>1,000 years old clonal meadows reported</small>
+			</div>
+			<img width="50%" src="figures/BalticSeaMap.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+		      
+		      <section>
+			<h3>Sampling location</h3>
+			<div>
+			  <small>40 plants collected along a 250 m transect</small>
+			  <small>39 plants were clones (equal genotype at 7 microsatellite loci)</small>
+			</div>
+			<img width="60%" src="figures/AlandSampling.jpg">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Methylome characterization</h3>
+			<img width="80%" src="figures/Wang2015Fig1r.png">
+			<p class="authors">Wang et al. (2015), <i>Open Biology</i></p>
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Basic results</h3>
+			How much of the genome is represented?
+			How many TEs, intergenic, and genic regions?
+		      </section>
+		      
+		      <section>
+			<h3>Differential methylation</h3>
+						<img width="75%" src="figures/EpigeneticDifferencesCombinedt.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			  <h3>Differences not explained by shoot distance</h3>
+			<div>
+			  <small>R=0.01, p=0.71</small>
+			</div>
+			<img width="45%" src="figures/201808_RPMdata.All_EpigeneticGeographicDistance.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+		      
+		    </section>
+
+
+		    
+
+		    
+		    <section data-transition="zoom">
+
+		      <section>
+		       <h3>Objectives</h3>
+		       <ul>
+			 <li>Do seagrass clones vary in DNA methylation?</li>
+			 <li class="fragment highlight-blue">Can the methylome predict heat stress resistance?</li>
+		       </ul>
+		       <aside class="notes">
+		       </aside>
+		      </section>
+
+		      <section>
+			<h3>Heat wave simulation</h3>
+			<div>
+			  <small>
+			    10 clones
+			  </small>
+			</div>
+			<img width="70%" src="figures/CommonGardenExperiments.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Physiological stress response</h3>
+			<img width="70%" src="figures/Fluorescence.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Physiological stress response</h3>
+			<div>
+			  <small>
+			    Performance under control and recovery was positively correlated.
+			    <!-- PiAbs___Heatstress1.selected.without19.2__PerAbsControlRecovery.png -->
+			  </small>
+			</div>
+			<img width="70%" src="figures/PiAbsHeatstress1.selected.without19.2AbolutePerformance.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Methylation patterns changed permanently</h3>
+			<img width="55%" src="figures/201903HeatStressPCAIndividuals_RPMdata.All_Heatstress1_all_.png">
+			<aside class="notes">
+			   Multivariate grouping of samples based on
+			   the methylation profiles o$ xx methylation
+			   sites at all sequence contexts using PCA.
+			   The two first principal components together
+			   explain 77.8% of the variance.  Circles
+			   represent 95% confidence intervals around
+			   group means (grouped by time points:
+			   control, heat stress, and recovery).
+			</aside>
+		      </section>
+
+
+		      <section>
+			<h3>Strong epigenetic stress memory</h3>
+			<img width="25%" src="figures/EpigeneticMemory.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+
+		      <section>
+			<h3>Pre-stress methylation patterns in genes (CG)</h3>
+			<div><small>correlated with performance</small></div>
+			<div id="left50">
+			  <div><small>prior to stress</small></div>
+			  <img width="90%" src="figures/RPMdata.Genes.CG___Heatstress1___control___absolute__CorrelationWithControl.png">
+			</div>
+			<div id="right50">
+			  <div><small>after stress</small></div>
+			  <img width="90%" src="figures/RPMdata.Genes.CG___Heatstress1___recovery___absolute__CorrelationWithControl.png">
+			</div>
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Pre-stress correlations</h3>
+			<img width="55%" src="figures/EpigeneticCorrelation1.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Post-stress methylation patterns</h3>
+			<div><small>correlated with post-stress performance</small></div>
+			<div id="left50">
+			  <div><small>in TEs (CHG)</small></div>
+			  <img width="90%" src="figures/RPMdata.TEs.CHG___Heatstress1___recovery___absolute__Correlation.png">
+			</div>
+			<div id="right50">
+			  <div><small>in intergenic regions (CHG)</small></div>
+			  <img width="90%" src="figures/RPMdata.InterGenes.CHG___Heatstress1___recovery___absolute__Correlation.png">
+			</div>
+			<aside class="notes">
+			</aside>
+		      </section>
+		      
+		      <section>
+			<h3>Post-stress correlations</h3>
+			<img width="55%" src="figures/EpigeneticCorrelation2.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      
+		    </section>
+
 			</div>
 		</div>
 
@@ -79,6 +419,7 @@
 			{ src: 'plugin/markdown/marked.js' },
 			{ src: 'plugin/markdown/markdown.js' },
 			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
 			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 			]
 			});
