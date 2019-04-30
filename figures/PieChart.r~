@@ -1,0 +1,37 @@
+
+
+## slices <- c(1210529,37000,344148,22500,12000,406544)
+## slices <- slices[order(c(1210529,37000,344148,22500,12000,406544))]
+## lbls <- c("Personnel","Travel","Consumables","Publication","Training","Indirect costs")
+## lbls <- lbls[order(c(1210529,37000,344148,22500,12000,406544))]
+## pct <- round(slices/sum(slices)*100)
+
+## pie(pct,labels = lbls, col=rainbow(length(lbls)),clockwise=TRUE,radius = 0.5, cex = 1.5)
+## df <- data.frame(lbls,slices)
+
+## library(RColorBrewer)
+## colors <- brewer.pal(7, name="BuGn")
+## colors[2:7]
+
+## library(ggplot2)
+## bar <- ggplot(df, aes(x = "", y = pct, fill = lbls)) +
+##     geom_bar(width = 1, stat = "identity", color = "white")
+## pie <- bar+coord_polar("y",start=0)+scale_fill_manual(values = colors[2:7])+
+##     theme_void()+
+##     theme(legend.text=element_text(size=30),legend.title=element_blank())+
+##     guides(fill=guide_legend(
+##                  keywidth=0.7,
+##                  keyheight=0.7,
+##                  default.unit="inch")
+##            )
+
+##  png(filename = "Pie.png",
+##          width = 700, height = 700, units = "px", pointsize = 12,
+##      bg = "white")
+## print(pie)
+## dev.off()
+
+## Using plotrix based on these examples:
+
+## https://www.r-bloggers.com/how-to-draw-venn-pie-agram-multi-layer-pie-chart-in-r/
+## https://stackoverflow.com/questions/26748069/ggplot2-pie-and-donut-chart-on-same-plot
