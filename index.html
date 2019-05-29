@@ -1,12 +1,18 @@
 <!doctype html>
 
 
+<!-- Need to introduce why we are looking at heat stress - because -->
+<!-- seagrasses are suffering from heats stress globally - provide a bigger -->
+<!-- picture as I showed in the  -->
+
 <!-- https://potentpages.com/web-design/reveal-js/tutorials -->
 <!-- https://stevegrunwell.com/blog/building-presentations-<!-- revea<\!-- l-js-2/ -\\-> -\-> -->
 <!-- https://www.chenhuijing.com/blog/revealjs-and-github-pages/ -->
 <!-- http://kripken.github.io/talks/ -->
 <!-- nice example http://slides.com/gsklee/functional-programming-in-5-minutes#/29 -->
 <!-- For pdf export: decktape --chrome-arg=--no-sandbox --size='2048x1536' index.html test.pdf -->
+
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -32,7 +38,7 @@
 	</head>
 	<body>
 	  <div class="reveal">
-	    <header style="position: absolute;bottom: 10px; left:10px; z-index:500; font-size:20px; color: #ffffff; background-color: rgba(0,0,0,0.3)"></header>
+	    <header style="position: absolute;bottom: 10px; left:10px; z-index:500; font-size:30px; color: #ffffff; background-color: rgba(0,0,0,0.3)"></header>
 
 	    <!-- absolute positioning of text on the page from https://www.raymondcamden.com/2014/04/01/Adding-an-Absolutely-Positioned-Header-to-Revealjs -->
 		  <div class="slides">
@@ -43,12 +49,11 @@
 		      <style>.title header:after { content:
 			"Photo: Galice Hoarau"; }</style>
 		      <div class="titlebg">
-			<h2 class="white">Functional role of <br>epigenetic variation<br> in seagrass <br>under heat stress</h2>
-			<h4 class="white">GRC Marine Molecular Ecology</h4>
-			<h4 class="white">Hong Kong</h4>
-			<p class="white">
-			  <small>Alexander Jueterbock<br>Researcher at Nord University<br>Norway</small>
-			</p>
+			<h3 class="white">Functional role of <br>epigenetic variation<br> in seagrass <br>under heat stress</h3>
+			<h4 class="white">GRC Marine Molecular Ecology<br>2019, Hong Kong</h4>
+			  <p><small class="white">Alexander Jueterbock, Norway</small></p>
+			  <img width="15%" height="auto" src="figures/logoNordBW.png">
+
 		      </div>
 		    </section>
 
@@ -57,112 +62,129 @@
 		      <section data-background="figures/7339653286_a7006c6732_h.jpg" data-state="header1">
 			<style>.header1 header:after { content: "Photo: Kristine Deppe https://www.flickr.com/photos/33414049@N08/7339653286/"; }</style>
 			<aside class="notes">
-			  Pretentious flowers, colorful plumage, and
-			  attractive ornaments—all are created with the
-			  ultimate goal to attract the opposite sex and
-			  contribute half of one’s own genes to the
-			  next generation. Recombination of genetic
+			  With his beaufiful plumage, this peacock
+			  aims to attract a female, and to contribute
+			  half of its own genes to the next
+			  generation. Recombination of genetic
 			  material during sexual reproduction allows
 			  the next generation to cope with changing
-			  selection pressures. Thus, genetic variation
-			 is considered the key to survival of
-			  populations in the long term3, and is
-			  recognized as a main target for the
-			  conservation of biological diversity. In
-			  contrast, lack of genetic variation is
-			  regarded as an evolutionary dead-end . For
-			  example, conservation management follows the
-			  rough guideline that more than 1 000 genetically
-			  different individuals in a population should
-			  mate randomly to avoid inbreeding depression,
-			  and retain evolutionary potential.
-		       </aside>		      
+			  selection  pressures. For the same reason are...
+			</aside>		      
 		      </section>
 		      
 		      <section data-background="figures/flowermeadow.jpg" data-state="header2">
 			<style>.header2 header:after { content: "Photo: https://apuncto.de/wp-content/uploads/2018/04/Blumenwiesen-im-Garten-Titelbild.jpg"; }</style>
+			<aside class="notes">
+.  ...these flowering plants attracting insects for pollination. The
+			 resulting genetic variation is considered the
+			 key to survival of populations in the long
+			 term, and is recognized as a main target for
+			 the conservation of biological diversity. In
+			 contrast, lack of genetic variation is
+			 regarded as an evolutionary dead-end . For
+			 example, conservation management follows the
+			 rough guideline that more than 1 000
+			 genetically different individuals in a
+			 population should mate randomly to avoid
+			 inbreeding depression, and retain
+			 evolutionary potential.  Yet, many species
+			 are sexually abstinent and produce clonal
+			 offspring that are genetically identical.
+			</aside>
 		      </section>
 		      
 		      <section>
 		       	<h3>Asexual reproduction in flowering plants</h3>
+			<p class="smaller"> 40% of plants reproduce clonally</p>
 			<img width="80%" height="auto" src="figures/StrawberryRunners.png">
 			<p class="authors">coursehero.com</p>
 			<aside class="notes">
-			  Yet, many species are sexually abstinent
-			  and produce clonal offspring that are
-			  genetically identical. While more rare in
-			  animals, roughly 40% of all plants can
-			  reproduce asexually, mostly through clonal
-			  growth where parental genotypes (genets)
-			  grow vegetative modules (ramets) that often
-			  remain connected via underground stolons or
-			  rhizomes.
+			 While more rare in animals, roughly 40% of
+			  all plants can reproduce asexually, mostly
+			  through clonal growth where parental
+			  genotypes (genets) grow vegetative modules
+			  (ramets) that often remain connected via
+			  underground stolons or rhizomes.  While
+			  clones benefit from resource sharing and
+			  rapid rapid vegetative growth 14 , they are
+			  predicted to survive only for short periods
+			  and in stable environments 6 due to the
+			  accumulation of deleterious mutations and
+			  slow rates of genetic evolution.  However,
+			  individual clonal plants feature some of our
+			  most important crops 13 (e.g. garlic, hops,
+			  potatoes, and turmeric) and many of the
+			  earth’s most invasive 10–12 , and oldest
+			  plants. For example 
 			</aside>	 
 		      </section>
-		      
-		      
-		      <section>
-			<h3>Asexual reproduction in seagrass</h3>
-			<img width="65%" height="auto" src="figures/EelgrassRhizome.png">
-			<p class="authors">Fonseca & Uhrin (2009), <i>Marine Fisheries Review</i></p>
+
+		      <section data-background="figures/PosidoniaOceanica.jpg" data-state="headerp">
+			<style>.headerp header:after { content: "Photo: Alberto Romeo albertoromeo@neomedia.it http://www.romeofotosub.it"; }</style>
+			<h3 class="white titlebg">>200,000 years old seagrass meadow</h3>
 			<aside class="notes">
-			  While clones benefit from resource sharing (clonal integration) 14 , niche specialization, and rapid vegetative
-			  growth 14 , they are predicted to survive only for short periods and in stable environments 6 due to the
-			  accumulation of deleterious mutations, slow rates of genetic evolution, and the lack of DNA repair
-			  mechanisms afforded by meiosis (Muller’s ratchet, mutational meltdown) 7–9 .
-			</aside>	 
-		      </section>
-		      
-		      
-		      
-		     
-		      <section data-background="figures/PicturesFromChristofferBostroem/Angso.jpg" data-state="chris1">
-			<style>.chris1 header:after { content: "Photo: Christoffer Boström"; }</style>
-			<aside class="notes">
-			  However, seagrasses form large clonal meadows
-			  that can persist for millenia. For example
-			  clonal meadows of the mediterranean seagrass
-			  Posidonia oceanica was estimated more than
-			 10,000 years old.
+			  a clonal meadow of the seagrass Posidonia
+			  oceanica in Australia has been estimated to
+			  be more than 200,000 years old.
+			  Such large, old
+			   clones challenge the direct relationship
+			   between genetic diversity and long-term
+			   survival, and suggest that genes may not be
+			   the single most important components of
+			   diversity and persistence.			  
 			</aside>
 		      </section>
+
 		      
-		      <section data-background="figures/PicturesFromChristofferBostroem/Sandskar.jpg" data-state="chris2">
-			<style>.chris2 header:after { content: "Photo: Christoffer Boström"; }</style>
-			<aside class="notes">
-			  Here we see a clonal meadow of the seagqrass
-			  Zostera marina in the Baltic sea. the evolutionary success of
-			  massive-ancient seagrass clones challenges the direct relationship
-			  between genetic diversity, adaptation potential, and persistence.
-			</aside>
-		      </section>
-		      
-		      <section>
-			<h3>Epigenetic variation</h3>
-			<img width="63%" height="auto" src="figures/EpigeneticsBookFig.png">
-			<p class="authors">Allis et al. (2015), <i>Epigenetics</i></p>
-		       <aside class="notes">
-			 Over the past ten years, advances in the young research field of ecological epigenetics increasingly recognize
-			 epigenetic variation as an additional level of evolutionary relevant variation 18,19,49,20,42–48 . Epigenetic variation
-			 can be independent from genetic variation 19,47,50,51 , and was suggested to contribute to the spread of clonal
-			 organisms across heterogeneous environments 22
-		       </aside>			
-		      </section>
-		      
-		      <section>
+
+		      		      <section>
 			<h3>Compensation for absence of genetic variation</h3>
 			<small>Methylation variation increased productivity and resistance</small>
-			<div id="left60">
+			<div class="left60">
 			  <img width="80%" src="figures/Latzel2013Fig2.png">
 			</div>
-			<div id="right40">
+			<div class="right40">
 			  <img width="50%" src="figures/Latzel2013Fig1b.png">
 			</div>
 			<p class="halfsize leftalign"><i>Arabidopsis thaliana</i></p>
 			<p class="authors leftalign">Latzel et al. (2013), <i>Nature Communications</i></p>
 			<aside class="notes">
+			  In Arabidopsis it was shown that methylation
+                          variation, a level of epigenetic variation,
+                          can compensate for the lack of genetic
+                          variation. Genetically identical plants were
+                          grown together in a pot.  They differed in
+                          their epigenotype. Sixteen different
+                          epigenotypes showed increased productivity
+                          and stability as compared to the case when
+                          all plants had the same epigenotype.
+                          Especially when pathogens and competitors
+                          were present.
 			</aside>
 		      </section>
+
+		      		      <section>
+			<h3>Epigenetic variation</h3>
+			<img width="63%" height="auto" src="figures/EpigeneticsBookFig.png">
+			<p class="authors">Allis et al. (2015), <i>Epigenetics</i></p>
+			<aside class="notes">
+			  The insight that epigenetic variation can
+			  provide a non-genetic component of heritable
+			  adaptive variation is a fairly new concept
+			  in the fields of ecology and evolution
+			  18–21. Epigenetic modifications, including
+			  histone modifications, non-coding RNA and
+			  DNA methylation do not alter the DNA
+			  sequence but do affect gene expression and,
+			  in that way, can organize one and the same
+			  genome in different ways. For example, all
+			  cells of our body have the same genotype but
+			  are phenotypically quite different, because
+			  they differ epigenetically. 
+		       </aside>			
+		      </section>
+		      
+
 		      
 		      
 		      
@@ -171,16 +193,35 @@
 			<img width="70%" height="auto" src="figures/zakhari01.png">
 			<p class="authors">Zakhari (2013), <i>Alcohol research: current reviews</i></p>
 			<aside class="notes">
+			  The methylome is the set of DNA methylation
+                          modifications in an organism's genome. The
+                          genome consists of four nucleotides AGCT,
+                          and C, the cytosine can be mehtylated, when
+                          a methyl-group is attached to its pyrimidine
+                          ring by DNA methyltransferase. This occurs
+                          in sequence contexts, such as when a c is
+                          followed by a g. Although it does not alter
+                          the DNA or protein sequence, it alters the
+                          expression of genes
 			</aside>			
 		      </section>
 		      
 		      
 		      
 		      <section>
-			<h3>DNA methylation represses gene expression</h3>
+			<h3>DNA methylation often represses gene expression</h3>
 			<img width="70%" src="figures/2958222.png">
 			<p class="authors">source: http://cnx.org/contents/QcTHfqRM@1/Basic-Principles-of-Genetics</p>
-			
+			<aside class="notes">
+			  DNA methylation often represses
+			  transcription when it occurs in promotor
+			  regions of genes. It also represses
+			  transcription in TEs, also called jumping
+			  genes. When DNA is methylated, a chain of
+			  reaction takes place by which DNA is more
+			  compactly organized around the histones, and
+			  less accessible to transcrition enzymes.
+			</aside>
 		      </section>
 		      
 		      
@@ -189,9 +230,28 @@
 			<img width="100%" src="figures/Replication.png">
 			<p class="authors">source: http://www.atdbio.com/content/56/Epigenetics</p>
 			<aside class="notes">
-			  Methylation patterns in the genome are reset
-			  during meiosis and embryogenesis and
-			  maintained during mitosis.
+
+			  From an evolutionary perspective, DNA
+			  methylation is the most relevant epigenetic
+			  mechanism as it can be transgenerationally
+			  stable when maintained during mitosis and
+			  meiosis and mitosis by methyltransferase
+			  enzymnes.  Methylation patterns in the
+			  genome are generally reset during meiosis
+			  and embryogenesis.  After a certain stage of
+			  embryogenesis, when an embryo grows and
+			  cells are dividing, mitosis takes place.
+			  Newly synthesized DNA strands are then
+			  methylated at the same locations as the
+			  parental DNA strands. So the methylation
+			  status is kept constant over mitotic cell
+			  divisions.  But the methylation state can
+			  change spontaneously - at a 64,000 times
+			  faster spontaneous epimutation rate than
+			  mutation rate. Moreover, methylation states
+			  change in response to environmental
+			  changes/stresses.
+
 			</aside>
 			<ul class="smaller">
 			  <li>Epimutation rate ca. 64,000 x genetic mutation rate</li>
@@ -205,21 +265,157 @@
 			<img width="32%" src="figures/CrispFig1.png">
 			<p class="authors">Crisp et al. (2016), <i>Science Advances</i></p>
 			<aside class="notes">
+			  Now when we expose a plant to dehydration
+                          and light stress, part of the methylation
+                          changes are reset when the stress is
+                          removed, but part of the methylation
+                          response also remains and imprints this
+                          plant and further generations to dry and
+                          bright conditions. In this way it can
+                          rapidly adapt epigenetically to
+                          environmental change.
 			</aside>
 		      </section>
+
+		      <section>
+			<h3>Hypothesis</h3>
+			<p>Variation in DNA methylation creates functional diversity and explains long-term survival of clonal seagrass meadows</p>
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section data-background="figures/PicturesFromChristofferBostroem/Angso.jpg" data-state="chris1">
+			<style>.chris1 header:after { content: "Photo: Christoffer Boström"; }</style>
+			<div>
+			  <h3 class="white titlebg">Asexual reproduction in seagrass</h3>
+			<img width="65%" height="auto" src="figures/EelgrassRhizome.png">
+			  <p class="authors white titlebg">Fonseca & Uhrin
+			    (2009), <i>Marine Fisheries Review</i></p>
+			</div>
+			<aside class="notes">
+			  Clonal propagation is especially
+well-developed in aquatic plants. Seagrasses, the only marine plants
+can reproduce sexually and vegetatively so that each shoot shares the
+same genotype. In seagrass meadows, the functional role of epigenetic variation is not
+only of fundamental interest but also of applied interest for
+sustainable management and restoration of these important ecosystem
+engineers.  
+			</aside>	 
+		      </section>
+				      
+		      
+		      <section data-background="figures/PicturesFromChristofferBostroem/Angso.jpg" data-state="chris1">
+			<aside class="notes">
+			  Seagrasses form the foundational basis of
+some of the most productive and highly diverse coastal marine
+ecosystems on the planet and provide ecosystem services such as carbon
+sequestration,
+			</aside>
+		      </section>
+
+
+		      
+		      <section data-background="figures/PicturesFromChristofferBostroem/Faro2.jpg" data-state="header3">
+			<style>.header3 header:after { content: "Poto: Christoffer Boström"; }</style>
+			<h3 class="titlebg">Habitat and food</h3>
+			<aside class="notes">
+			  habitat and food for a broad range of marine invertebrates, and
+			</aside>
+		      </section>
+
+		      <!-- <section data-background="figures/PicturesFromChristofferBostroem/Angso.jpg" data-state="header1"> -->
+		      <!-- 	<style>.header1 header:after { content: -->
+		      <!-- 	  "Christoffer Boström"; }</style> -->
+
+
+
+		      
+			
+			<section data-background="figures/CodInSeagrass.JPG" data-state="header1">
+			  <style>.header1 header:after { content:
+			    "Photo: http://zostera.blogspot.com/2010/06/atlantic-cod-and-eelgrass-oh-my.html"; }</style>
+			  <h3 class="titlebg">Nursery grounds</h3>
+			  <!-- <small class="titlebg">e.g. cod 590 ind/ha <br> -->
+			  <!--   Unsworth et al. (2018); <i>Conservation Letters</i></small> -->
+			  <aside class="notes">
+			    nursery grounds for economically important
+			    fishes, like cod here.  importance. Cod,
+			    for example, which lives during adulthood
+			    rather in deeper waters, finds at its
+			    juvenile stage food and protection in
+			    seagrass meadows.
+			  </aside>
+			</section>		      
+			    
+		      
+			
+		       <section>
+			 <h3>Distribution of <i>Zostera marina</i></h3>
+			 <img width="75%" height="auto" src="figures/Zostera_marina_dis.png">
+			 <p class="authors">From IUCN Red List of Threatened Species. Version 2010.4</p>
+			 <aside class="notes">
+			   In this study, we aimed to characterize the
+ functional relevance of epigenetic variation for stress resilience in
+ the seagrass Z. marina. Z. marina is the most widely distributed
+ seagrass in the northern hemisphere, and grows in highly contrasting
+ habitats from Arctic to sub-tropical waters. In the Baltic Sea, large
+ old clones > 1,000 years have been reported.
+			</aside>
+		       </section>	      
+
+		      
+		      <section data-background="figures/PicturesFromChristofferBostroem/Sandskar.jpg" data-state="chris2">
+			<style>.chris2 header:after { content: "Photo: Christoffer Boström"; }</style>
+			<aside class="notes">
+			  Here we take a bird's eye view on such a
+			   clonal meadow in the Baltic sea.  We
+			   focused on such an old seagrass clone to
+			   address two main objectives.
+			</aside>
+
+	
+
+		       
+		      </section>
+
+			
+
+
+		     
+
+
+		  
+		      
+
+
+
+
+		       
+		       
 		    </section>
 
+
+
+
+
+		    
 		    <section data-transition="zoom">
+
+		      
 		      <section>
 			<h3>Objectives</h3>
 			<ul>
-			  <li class="fragment highlight-blue">Do seagrass clones vary in DNA methylation?</li>
-			  <li>Can the methylome predict heat stress resistance?</li>
+			  <li class="fragment highlight-blue">Characterize DNA methylation variation in a clonal seagrass meadow</li>
+			  <li>Identify the functional role of this variation under heat-stress</li>
 			</ul>
 			<aside class="notes">
 			</aside>
 		      </section>
+
 		      
+
+
+		       
 		      <section>
 			<h3>Sampling in the Baltic Sea</h3>
 			<div>
@@ -246,14 +442,23 @@
 			<img width="80%" src="figures/Wang2015Fig1r.png">
 			<p class="authors">Wang et al. (2015), <i>Open Biology</i></p>
 			<aside class="notes">
+			  The methylome was characterized by MethylRAD
+			  sequencing. MethylRAD is a genome-reduction
+			  method based on a methylation-dependent
+			  restriction enzyme that targets CG and CHG
+			  motifs. The enzyme cuts out 32bp fragments
+			  surrounding methylated sites. These digested
+			  fragments were sequenced on an Illumina
+			  NextSeq (1x75bp) and mapped to the in-silico
+			  digested Z. marina genome.
 			</aside>
 		      </section>
 
 		      <section>
 			<h3>Basic results</h3>
 			<div>
-			  <small>213.764 sites methylated across samples</small>
-			  <small>4% of 628,255 in-silico predicted methylation sites</small>
+			  <small>213,764 sites methylated across samples</small>
+			  <small>34% of 628,255 in-silico predicted methylation sites</small>
 			  <img width="45%" src="figures/Pie2.png">
 			</div>
 			<!-- 628,255 in-silico predicted MethylRAD cutting sites. -->
@@ -278,21 +483,71 @@
 		      </section>
 		      
 		      <section>
-			<h3>Differential methylation</h3>
+			<h3>Pairwise methylation differences</h3>
 						<img width="75%" src="figures/EpigeneticDifferencesCombinedt.png">
-			<aside class="notes">
+						<aside class="notes">
+						  Pairwise methylation
+						  differences
+						  (methylated/not
+						  methylated) between
+						  clonal shoots did
+						  not differ from
+						  pairwise methylation
+						  differences between
+						  the 39 clonal shoots
+						  and the 1 shoot that
+						  had a different
+						  genotype. On average
+						  23% of MethylRAD
+						  tags were
+						  differently
+						  methylated between
+						  the
+						  samples. Differences
+						  were generally lower
+						  in CHG as compared
+						  with CG sequence
+						  contexts.
+						  
 			</aside>
 		      </section>
 
 		      <section>
-			  <h3>Differences not explained by shoot distance</h3>
+			<h3>Epigenetic distances</h3>
+			<div>
+			  <small>Euclidean distance between shoots in PCA plot</small>
+			</div>
+			<img width="45%" src="figures/EuclideanDistances.png">
+			<aside class="notes">
+			  
+		      			  To assess the epigenetic distance between
+			  the shoots, we did a principle component (explain this in a graph)
+			  analysis based on the methylation counts,
+			  and calculated the pairwise euclidean
+			  distance between the shoots along the first
+			  two principle components.
+			</aside>
+		      </section>
+
+
+		      <section>
+			  <h3>Epigenetic distance not explained by <br> shoot distance</h3>
 			<div>
 			  <small>R=0.01, p=0.71</small>
 			</div>
 			<img width="45%" src="figures/201808_RPMdata.All_EpigeneticGeographicDistance.png">
-			<aside class="notes">
+			<aside class="notes">  The epigenetic distance
+			  was not correlated with shoots distance in
+			  any sequence context.
 			</aside>
 		      </section>
+
+
+		      	<section data-background="#c4dfe6">
+			  <p class="importantcolor">Seagrass clones differ in DNA methylation without clear spatial pattern<p>
+			    <aside class="notes">
+			  </aside>
+			</section>
 		      
 		    </section>
 
@@ -305,8 +560,8 @@
 		      <section>
 		       <h3>Objectives</h3>
 		       <ul>
-			 <li>Do seagrass clones vary in DNA methylation?</li>
-			 <li class="fragment highlight-blue">Can the methylome predict heat stress resistance?</li>
+			 <li>Characterize DNA methylation variation in a clonal seagrass meadow</li>
+			  <li class="fragment highlight-blue">Identify the functional role of this variation under heat-stress</li>
 		       </ul>
 		       <aside class="notes">
 		       </aside>
@@ -316,7 +571,7 @@
 			<h3>Heat wave simulation</h3>
 			<div>
 			  <small>
-			    10 clones
+			    10 shoots of the same clone
 			  </small>
 			</div>
 			<img width="70%" src="figures/CommonGardenExperiments.png">
@@ -328,6 +583,14 @@
 			<h3>Physiological stress response</h3>
 			<img width="70%" src="figures/Fluorescence.png">
 			<aside class="notes">
+			  Z. marina stops growing when temperatures
+			  rise above 20°C and starts to die off at
+			  temperatures >25°C. The performance of the
+			  shoots under the applied stress of 27°C was
+			  thus expected to be quite low. We measured
+			  the photosynthetic performance at control,
+			  stress, and recovery time points with a
+			  fluorometer.
 			</aside>
 		      </section>
 
@@ -349,13 +612,17 @@
 			<img width="55%" src="figures/201903HeatStressPCAIndividuals_RPMdata.All_Heatstress1_all_.png">
 			<aside class="notes">
 			   Multivariate grouping of samples based on
-			   the methylation profiles o$ xx methylation
+			   the methylation profiles of all methylation
 			   sites at all sequence contexts using PCA.
 			   The two first principal components together
-			   explain 77.8% of the variance.  Circles
+			   explain ca. 78% of the variance.  Circles
 			   represent 95% confidence intervals around
 			   group means (grouped by time points:
-			   control, heat stress, and recovery).
+			   control, heat stress, and recovery). This
+			   shows that the methylation patterns are
+			   changing under stress and don't go back to
+			   the pre-stress state anymore but remain
+			   altered after the recovery period.
 			</aside>
 		      </section>
 
@@ -368,60 +635,275 @@
 		      </section>
 
 		      <section>
-			<h3>Pre-stress correlations</h3>
-			<img width="55%" src="figures/EpigeneticCorrelation1.png">
-			<aside class="notes">
-			</aside>
-		      </section>
-
-
-		      <section>
-			<h3>Pre-stress methylation patterns in genes (CG)</h3>
-			<div><small>correlated with performance</small></div>
-			<div id="left50">
-			  <div><small>prior to stress</small></div>
-			  <img width="90%" src="figures/RPMdata.Genes.CG___Heatstress1___control___absolute__CorrelationWithControl.png">
-			</div>
-			<div id="right50">
-			  <div><small>after stress</small></div>
-			  <img width="90%" src="figures/RPMdata.Genes.CG___Heatstress1___recovery___absolute__CorrelationWithControl.png">
-			</div>
-			<aside class="notes">
-			</aside>
-		      </section>
-
-
-
-		      <section>
-			<h3>Post-stress correlations</h3>
-			<img width="55%" src="figures/EpigeneticCorrelation2.png">
+			<h3>Positive pre-stress correlations</h3>
+			<img width="60%" src="figures/EpigeneticCorrelation1.png">
 			<aside class="notes">
 			</aside>
 		      </section>
 
 		      <section>
-			<h3>Post-stress methylation patterns</h3>
-			<div><small>correlated with post-stress performance</small></div>
-			<div id="left50">
-			  <div><small>in TEs (CHG)</small></div>
-			  <img width="90%" src="figures/RPMdata.TEs.CHG___Heatstress1___recovery___absolute__Correlation.png">
-			</div>
-			<div id="right50">
-			  <div><small>in intergenic regions (CHG)</small></div>
-			  <img width="90%" src="figures/RPMdata.InterGenes.CHG___Heatstress1___recovery___absolute__Correlation.png">
+			<h3>Positive pre-stress correlations</h3>
+			<img width="60%" src="figures/EpigeneticCorrelation11.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			  <img width="60%" src="figures/RPMdata.Genes.CG___Heatstress1___control___absolute__CorrelationWithControl.png">
+		      </section>
+		      
+		      <section>
+			<h3>Positive pre-stress correlations</h3>
+			<img width="60%" src="figures/EpigeneticCorrelation12.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			  <img width="60%" src="figures/RPMdata.Genes.CG___Heatstress1___recovery___absolute__CorrelationWithControl.png">
+		      </section>
+		      
+
+		      <section>
+			<h3>Positive post-stress correlations</h3>
+			<img width="60%" src="figures/EpigeneticCorrelation2.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Positive post-stress correlations</h3>
+			<img width="60%" src="figures/EpigeneticCorrelation21.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			  <img width="60%" src="figures/RPMdata.InterGenes.CHG___Heatstress1___recovery___absolute__Correlation.png">
+		      </section>
+		      
+		      
+		      <section>
+			<h3>Positive post-stress correlations</h3>
+			<img width="60%" src="figures/EpigeneticCorrelation22.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			  <img width="60%" src="figures/RPMdata.TEs.CHG___Heatstress1___recovery___absolute__Correlation.png">
+		      </section>
+
+
+		      <section data-background="figures/PicturesFromChristofferBostroem/Angso.jpg" data-state="header3">
+			<style>.header3 header:after { content: "Poto: Christoffer Boström"; }</style>
+			<p class="titlebg">Epigenetic variation is functionally relevant<br> under heat stress</p>
+		      </section>
+
+		      <section data-background="#c4dfe6">
+			<p class="importantcolor">...what methylation patterns characterize shoots of high performance?</p>
+			  <aside class="notes">
+			  </aside>
+		      </section>
+			  
+		      <section>
+			<h3>Differential methylation </h3>
+			High vs. low performance
+			<img width="70%" src="figures/DifferentialMethylationTest2.png">
+			<aside class="notes">
+			</aside>
+		      </section>
+
+		      <section>
+			<h3>Functional characterization of <br>gene body methylation based on GO-enrichment</h3>
+			<div class="leftalign smaller">
+			  <p>Increased methylation/(expression?)
+			    </p>
+			  <ul>
+			    <li>
+			      Nucleic acid metabolism
+			    </li>
+			    <li>
+			      Protein synthesis
+			    </li>
+			    <li>
+			      Thioester metabolism
+			    </li>
+			    <li>
+			      Regulation of developmental process
+			    </li>
+			    <li>
+			      Copper ion transport
+			    </li>
+			    <li>
+			      Light harvesting in PSI
+			    </li>
+			  </ul>
+			  <p>Reduced methylation/(expression?)</p>
+			  <ul>
+			    <li>
+			     Cellular protein modification process
+			    </li>
+			  </ul>
 			</div>
 			<aside class="notes">
 			</aside>
 		      </section>
 		      
 
+		    </section>
+		      
+
+
+		      
+		    <section data-transition="zoom">
+		      <section>
+			<h2>Conclusions</h2>
+		      </section>
+		      
+		      <section data-background="figures/PicturesFromChristofferBostroem/Sandskar.jpg" data-state="header4">
+			<style>.header4 header:after { content: "Poto: Christoffer Boström"; }</style>
+			<p class="titlebg">Methylation variation creates phenotypic diversity <br> and may explain long-term
+			  survival of clonal seagrass meadows lacking genetic variation</p>
+			
+			<aside class="notes">
+			  By creating functional phenotypic diversity
+
+			  Thus, the current reliance on allelic and
+			  genotypic variation alone for management and
+			  conservation may be too narrow to caputre
+			  stress reslience, stability and adaptive
+			  potential of clonal plants. Given that 40% of all plants
+			  reproduce clonally, our findings are
+			  important to other fields, such as invasion
+			  biology and crop breeding strategies.
+			  
+			  This is directly relevant for management
+			  programs of clonal organisms designed to assess evolutionary potential
+			  and population stability, and to minimize the loss of
+			  biodiversity.
+			</aside>	
+		      </section>
+		      
+		      <section>
+			<h4>Direct relevance for seagrass management and restoration</h4>
+			<p class="smaller">genetic variation is not the single most
+			  important indicator of resilience and, potentially, restoration success</p>
+			<img width="70%" src="figures/SeagrassReplanting.jpg">
+			<p class="authors">Brendan Smialowski/Getty Images</p>
+		      	<aside class="notes">
+			  More narrowly, it can also be a first step towards a
+			  more sustainable seagrass restoration management that largely depends
+			  on the success of replanted shoots to overcome natural variability
+			</aside>	
+		      </section>
+
+		      
+		      
+		      </section>
+
+
+
+
+		      
+		      <section>
+			<h3>Main remaining question</h3>
+			  <h5>Is the epigenetic heat response heritable and adaptive?</h5>
+			<img width="55%" height="auto" src="figures/EelgrassRhizome.png">
+			<p class="authors">Fonseca & Uhrin (2009), <i>Marine Fisheries Review</i></p>
+			<aside class="notes">
+			  Another open question: Are clonal populations epigenetically more
+			  diverse as compared to non-clonal plants?
+			</aside>	 
+		      </section>
+
+		    <section data-background="figures/home-bg1.jpg" data-state="title">
+		      <!-- data-state="dimbg"> -->
+		      <style>.title header:after { content:
+			"Photo: Galice Hoarau"; }</style>
+		      <div class="titlebg pad20">
+			
+			<h3 class="white">Collaborators</h3>
+
+			<div class="white leftalign smaller left50">
+			  <p><b>Åbo Akademi University (Finland)</b><br>Christoffer Boström</p>
+			  <p><b>GEOMAR (Germany)</b><br>Thorsten B.H. Reusch</p>
+			  <p><b>Nord University (Norway)</b><br>Martina Kopp<br>Anusha Dhanasiri<br>Irina Smolina<br>Galice Hoarau</p>
+			</div>
+			<div class="white leftalign smaller right50">
+			  <p><b>University of Groningen (Netherlands)</b><br>Jeanine L. Olsen</p>
+			  <p><b>Ifremer (France)</b><br>Sophie Arnaud-Haond</p>
+			  <p><b>Ghent University (Belgium)</b><br>Yves Van de Peer</p>
+			  <br><br>
+			</div>
+			<div class="white smaller">
+			  <h3 class="white">Funding</h3>
+			  <div>
+			    <img width="25%" height="auto" src="figures/NFR.png">
+			  </div>
+			</div>
+			
+		      </div>
+		    </section>
+
+
+
+		    <section>
+		      <section>
+			<h3>Additional slides</h3>
+			</section>
+		       <section>
+			 <h3>Net loss of seagrass area</h3>
+			 <img width="100%" height="auto" src="figures/Waycott2009PNAS.jpg">
+			 <p class="authors">Waycott et al. (2009); <i>PNAS</i></p>
+			 <!-- <div class="leftwriting"> -->
+			 <!--   <p>Global<br>17% no change<br>25% increase<br>58% decrease</p> -->
+			 <!-- </div> -->
+			 <aside class="notes">
+			   Nearly one-third of global seagrass area
+			   has disappeared over the last 100 years-
+			   this is equivalent to losing a seagrass meadow
+			   of a football pitch size every half an
+			   hour. The rate of loss accelerated from
+			   about 1 percent per year (1 football field
+			   every half an hour) before 1940 to 7
+			   percent per year since 1990 (1 football
+			   field every 4 minutes). Reasons besides
+			   coastal development and pollution are
+			   rising temperatures, hitting the meadows in
+			   form of heatwaves.
+			</aside>
+		       </section>
+
+		       
+		      <section>
+			<div>
+			  <h3 >Carbon sequestration (48-160 Tg C yr<sup>-1</sup>)</h3>
+			  </div>
+			<img width="27%" height="auto" src="figures/SeagrassCarbon.jpg">
+			<p class="authors">Photo credit: Oscar Serrano, https://www.eurekalert.org/multimedia/pub/165345.php</p>	
+			<aside class="notes">
+			  Carbon-sequestration: Long term storage of
+			carbon to mitigate global warming.  Organic
+			carbon stores beneath seagrass meadows in
+			Shark Bay. Organic material derived from
+			seagrass roots, rhizomes and leaf sheaths is
+			embedded in sandy sediments, forming organic
+			deposits several meters in thickness. Loss of
+			seagrass meadows means that they actually
+			become carbon sources via the remobilization
+			of carbon stocks accumulated over thousands of
+			years. 9000 Tg C were emitted in year 2010.
+		      </aside>
+		      </section>
 
 		      
 		    </section>
 
-			</div>
-		</div>
 
+		  </div>
+	  </div>
+	  
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
@@ -433,6 +915,9 @@
 			
 			// Display presentation control arrows
 			controls: true,
+
+			//Display notes
+			showNotes: true,
 
 			slideNumber: true,
 

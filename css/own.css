@@ -2,6 +2,10 @@ html.dimbg .slide-background {
 	opacity: 0.5 !important;
 }
 
+.importantcolor{
+    color: #003b46 !important;
+}
+
 .titlebg {
     color: #ffffff !important;
     background-color: rgba(0,0,0,0.5)}
@@ -23,7 +27,7 @@ right: 0px;
 
 
 
-#left60 {
+.left60 {
   left:-8.33%;
   text-align: left;
   float: left;
@@ -31,7 +35,7 @@ right: 0px;
   z-index:-10;
 }
 
-#right40 {
+.right40 {
   left:10%;
   top: 75px;
   float: right;
@@ -40,7 +44,7 @@ right: 0px;
   width:40%;
 }
 
-#left80 {
+.left80 {
   left:-8.33%;
   text-align: centered;
   float: left;
@@ -48,7 +52,7 @@ right: 0px;
   z-index:-10;
 }
 
-#right20 {
+.right20 {
   left:10%;
   top: 75px;
   float: right;
@@ -58,7 +62,7 @@ right: 0px;
 }
 
 
-#left50 {
+.left50 {
   left:-8.33%;
   text-align: centered;
   float: left;
@@ -66,7 +70,7 @@ right: 0px;
   z-index:-10;
 }
 
-#right50 {
+.right50 {
   left:10%;
   top: 75px;
   float: right;
@@ -87,4 +91,9 @@ right: 0px;
 
 .halfsize{
     font-size: 50% !important;
+}
+
+
+div.pad20{
+    padding-left: 30px;
 }

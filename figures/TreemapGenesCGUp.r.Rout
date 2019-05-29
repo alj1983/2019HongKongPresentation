@@ -1,0 +1,34 @@
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # A treemap R script produced by the REVIGO server at http://revigo.irb.hr/
+> # If you found REVIGO useful in your work, please cite the following reference:
+> # Supek F et al. "REVIGO summarizes and visualizes long lists of Gene Ontology
+> # terms" PLoS ONE 2011. doi:10.1371/journal.pone.0021800
+> 
+> # author: Anton Kratz <anton.kratz@gmail.com>, RIKEN Omics Science Center, Functional Genomics Technology Team, Japan
+> # created: Fri, Nov 02, 2012  7:25:52 PM
+> # last change: Fri, Nov 09, 2012  3:20:01 PM
+> 
+> # -----------------------------------------------------------------------------
+> # If you don't have the treemap package installed, uncomment the following line:
+> # install.packages( "treemap" );
+> library(treemap) 								# treemap package by Martijn Tennekes
+Error in library(treemap) : there is no package called ‘treemap’
+Execution halted

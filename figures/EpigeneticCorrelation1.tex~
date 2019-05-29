@@ -85,9 +85,9 @@ sdssss\pgfmathsetlength{\imagewidth}{20cm} % desired displayed width of image
 \end{scope}
 
 
-\draw [-latex,line width=0.02cm] (0.5cm,-0.2cm) -- node [scale=0.7,below=0.2cm]{explains} (3.5cm,-0.5);
+\draw [latex-latex,line width=0.02cm] (0.5cm,-0.2cm) -- node [scale=0.7,below=0.2cm]{correlated} (3.5cm,-0.5);
 
-\draw [-latex,line width=0.02cm] (0.5cm,-0.2cm) -- node [scale=0.7,below=0.2cm]{explains} (3.5cm,-4.5);
+\draw [latex-latex,line width=0.02cm] (0.5cm,-0.2cm) -- node [scale=0.7,below=0.2cm]{correlated} (3.5cm,-4.5);
 
 
 \begin{scope}[xshift=5cm]

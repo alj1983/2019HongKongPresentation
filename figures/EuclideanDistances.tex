@@ -1,0 +1,64 @@
+\documentclass[11pt]{scrartcl} 
+
+
+\usepackage{graphicx,graphics,tikz,pgfkeys}
+\usetikzlibrary{arrows,decorations.pathreplacing}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{textcomp}
+
+
+\usepackage{fixltx2e} % to be able to use the command \textsubscript
+
+\usepackage[amssymb,thinqspace,textstyle,binary,noams,derivedinbase,derived]{SIunits} % To use SI units.
+% amssymb: This option redefines the amssymb command \square to get
+% the desired SIunits definition of the command.  Note: When using
+% this option, the amssymb command \square can not be used.
+
+%thinqspace This mode provides the use of \, (thin math space) as spacing be-
+%        tween numerical quantities and units.
+
+% textstyle:  When using the option textstyle units are printed in the typeface of the
+%enclosing text, automatically.
+
+%binary   This option loads the file binary.sty, which defines prefixes for binary
+%         multiples.
+%noams This option redefines the \micro command; use it when you donât have
+%         the AMS font, eurm10.
+%derivedinbase This mode provides the ready-to-use expressions of SI derived units
+%         in SI base units, e. g. \pascalbase to get âmâ1 kg sâ2 â.
+%derived This mode provides the ready-to-use expressions of SI derived units in SI
+%         derived units, e. g. \derpascal to get âN mâ2 â.
+
+
+%\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,placments,fit}
+\usepackage[graphics,tightpage,active]{preview}
+\PreviewEnvironment{tikzpicture}
+\newlength\imagewidth
+\newlength\imagescale
+
+\begin{document}
+
+sdssss\pgfmathsetlength{\imagewidth}{20cm} % desired displayed width of image
+\pgfmathsetlength{\imagescale}{\imagewidth/1200} % pixel width of image
+% adjust scale of tikzpicture (and direction of y) such that pixel
+% coordinates can be used for drawing overlays:
+
+
+\begin{center}
+\begin{tikzpicture}[font=\sffamily]
+
+e\node[inner sep=0pt,outer sep=0pt,scale=1,anchor=west] at (0cm,0cm) {\includegraphics[width=10cm]{{201903HeatStressPCAIndividuals_RPMdata.All_Heatstress1_all_WithoutEllipses}.png}};
+
+\draw [latex-latex,color=red!60!black, line width=0.05cm] (5.8cm,3.8cm) -- (7.3cm,0.5cm);
+\draw [latex-latex,color=red!60!black, line width=0.05cm] (5.3cm,3.8cm) -- (4.2cm,2.8cm);
+
+\end{tikzpicture}
+
+
+\end{center}
+
+\end{document}

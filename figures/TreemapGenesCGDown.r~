@@ -1,0 +1,76 @@
+# A treemap R script produced by the REVIGO server at http://revigo.irb.hr/
+# If you found REVIGO useful in your work, please cite the following reference:
+# Supek F et al. "REVIGO summarizes and visualizes long lists of Gene Ontology
+# terms" PLoS ONE 2011. doi:10.1371/journal.pone.0021800
+
+# author: Anton Kratz <anton.kratz@gmail.com>, RIKEN Omics Science Center, Functional Genomics Technology Team, Japan
+# created: Fri, Nov 02, 2012  7:25:52 PM
+# last change: Fri, Nov 09, 2012  3:20:01 PM
+
+# -----------------------------------------------------------------------------
+# If you don't have the treemap package installed, uncomment the following line:
+# install.packages( "treemap" );
+library(treemap) 								# treemap package by Martijn Tennekes
+
+# Set the working directory if necessary
+# setwd("C:/Users/username/workingdir");
+
+# --------------------------------------------------------------------------
+# Here is your data from REVIGO. Scroll down for plot configuration options.
+
+revigo.names <- c("term_ID","description","freqInDbPercent","abslog10pvalue","uniqueness","dispensability","representative");
+revigo.data <- rbind(c("GO:0006426","glycyl-tRNA aminoacylation",0.017,2.8539,0.540,0.000,"glycyl-tRNA aminoacylation"),
+c("GO:0034641","cellular nitrogen compound metabolic process",25.404,2.0458,0.633,0.630,"glycyl-tRNA aminoacylation"),
+c("GO:0090304","nucleic acid metabolic process",19.689,2.7447,0.600,0.455,"glycyl-tRNA aminoacylation"),
+c("GO:0009081","branched-chain amino acid metabolic process",0.173,1.3778,0.564,0.643,"glycyl-tRNA aminoacylation"),
+c("GO:0006310","DNA recombination",0.656,1.9355,0.683,0.301,"glycyl-tRNA aminoacylation"),
+c("GO:0006259","DNA metabolic process",2.603,2.2924,0.666,0.212,"glycyl-tRNA aminoacylation"),
+c("GO:0006399","tRNA metabolic process",0.807,1.7258,0.623,0.584,"glycyl-tRNA aminoacylation"),
+c("GO:0034033","purine nucleoside bisphosphate biosynthetic process",0.047,1.4522,0.543,0.323,"glycyl-tRNA aminoacylation"),
+c("GO:0043038","amino acid activation",0.306,2.3010,0.548,0.603,"glycyl-tRNA aminoacylation"),
+c("GO:0006573","valine metabolic process",0.078,2.5850,0.584,0.494,"glycyl-tRNA aminoacylation"),
+c("GO:0006515","misfolded or incompletely synthesized protein catabolic process",0.069,1.6402,0.811,0.183,"glycyl-tRNA aminoacylation"),
+c("GO:0034660","ncRNA metabolic process",1.813,1.5186,0.671,0.341,"glycyl-tRNA aminoacylation"),
+c("GO:0006083","acetate metabolic process",0.009,2.0269,0.683,0.330,"glycyl-tRNA aminoacylation"),
+c("GO:0006422","aspartyl-tRNA aminoacylation",0.009,2.5850,0.555,0.642,"glycyl-tRNA aminoacylation"),
+c("GO:0006825","copper ion transport",0.069,1.5817,0.949,0.000,"copper ion transport"),
+c("GO:0050793","regulation of developmental process",2.577,1.3686,0.801,0.000,"regulation of developmental process"),
+c("GO:0000902","cell morphogenesis",1.467,1.3449,0.601,0.683,"regulation of developmental process"),
+c("GO:0009653","anatomical structure morphogenesis",3.500,1.3449,0.792,0.514,"regulation of developmental process"),
+c("GO:0022603","regulation of anatomical structure morphogenesis",0.522,1.4522,0.764,0.404,"regulation of developmental process"),
+c("GO:0048869","cellular developmental process",4.148,1.3298,0.634,0.552,"regulation of developmental process"),
+c("GO:0035383","thioester metabolic process",0.151,2.0269,0.692,0.054,"thioester metabolism"),
+c("GO:0046483","heterocycle metabolic process",22.969,2.4437,0.760,0.103,"thioester metabolism"),
+c("GO:0006725","cellular aromatic compound metabolic process",23.483,2.4318,0.759,0.281,"thioester metabolism"),
+c("GO:0035384","thioester biosynthetic process",0.082,2.0269,0.607,0.617,"thioester metabolism"),
+c("GO:1901360","organic cyclic compound metabolic process",23.932,2.3768,0.804,0.175,"thioester metabolism"),
+c("GO:0009768","photosynthesis, light harvesting in photosystem I",0.095,1.6402,0.843,0.061,"photosynthesis, light harvesting in photosystem I"));
+
+stuff <- data.frame(revigo.data);
+names(stuff) <- revigo.names;
+
+stuff$abslog10pvalue <- as.numeric( as.character(stuff$abslog10pvalue) );
+stuff$freqInDbPercent <- as.numeric( as.character(stuff$freqInDbPercent) );
+stuff$uniqueness <- as.numeric( as.character(stuff$uniqueness) );
+stuff$dispensability <- as.numeric( as.character(stuff$dispensability) );
+
+# by default, outputs to a PDF file
+pdf( file="revigo_treemap.pdf", width=16, height=9 ) # width and height are in inches
+
+# check the tmPlot command documentation for all possible parameters - there are a lot more
+tmPlot(
+	stuff,
+	index = c("representative","description"),
+	vSize = "abslog10pvalue",
+	type = "categorical",
+	vColor = "representative",
+	title = "REVIGO Gene Ontology treemap",
+	inflate.labels = FALSE,      # set this to TRUE for space-filling group labels - good for posters
+	lowerbound.cex.labels = 0,   # try to draw as many labels as possible (still, some small squares may not get a label)
+	bg.labels = "#CCCCCCAA",     # define background color of group labels
+												       # "#CCCCCC00" is fully transparent, "#CCCCCCAA" is semi-transparent grey, NA is opaque
+	position.legend = "none"
+)
+
+dev.off()
+
